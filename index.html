@@ -312,6 +312,31 @@ footer li {
 footer li:hover {
     font-size: 18px;
 }
+#modo-oscuro-container {
+        margin: 15px; /* Ajusta el margen según tus preferencias */
+        text-align: left;
+    }
+
+    #modo-oscuro-button {
+        background-color: #01000a; /* Cambia el color de fondo según tus preferencias */
+        color: #ffffff; /* Cambia el color del texto según tus preferencias */
+        padding: 15px 25px;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+        outline: none; /* Elimina el contorno predeterminado al hacer clic */ 
+        font-weight: bold;
+    }
+
+    #modo-oscuro-button:hover {
+        background-color: #011a8a; /* Cambia el color de fondo al pasar el cursor sobre el botón */
+        transform: scale(1.1); /* Aumenta ligeramente el tamaño al pasar el cursor */
+    }
+
+    #modo-oscuro-button:active {
+        transform: scale(1.0);
+    }
 
     </style>
 </head>
@@ -319,6 +344,11 @@ footer li:hover {
     
 
     <header style="background: linear-gradient(45deg, #09002b, #000000); padding: 20px;">
+      
+        <div id="modo-oscuro-container">
+            <button id="modo-oscuro-button" onclick="modoOscuro()">Tema Original</button>
+        </div>
+
         <h1 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: #0084ff; text-align: center; font-size: 50px; margin: 15px;;">
            
             BIENVENIDOS A HOMECREAM
@@ -493,7 +523,10 @@ footer li:hover {
  
     // Llama a la función para generar el contenido al cargar la página
     window.onload = generarContenidoHelados;
-    
+     
+     function modoOscuro() { 
+        window.location.href = 'https://www.disneyplus.com/es-co?irclickid=XqHXdRTuTxyPWCHyfjxSNz4aUkHzVZ0PdW7oRI0&irgwc=1&cid=DSS-Affiliate-Impact-Content-Opera%E2%80%8A-564546&tgclid=01010015-a41a-4176-8600-148d65ad647d&dclid=CJzg7ZSQ74MDFR8CTwgdB3AF9A';
+    }
     
 </script>
 
